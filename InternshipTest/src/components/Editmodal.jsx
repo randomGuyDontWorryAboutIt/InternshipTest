@@ -17,7 +17,7 @@ function EditModal({ isOpen, onClose, rowData }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const result = await updateData(rowData.id, formData);
-        console.log(result)
+        // console.log(result)
         if (result.success) {
             alert('Data updated successfully');
             onClose();
